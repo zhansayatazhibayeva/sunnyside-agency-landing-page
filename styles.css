@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    background-image: url('images/desktop/image-header.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+header .logo img{
+    width: 10em;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-family: 'Barlow', sans-serif;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header nav li a{
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    /* display: block; */
+}
+.header nav a:hover{
+    background-color: #fff;
+    color:hsl(198, 62%, 26%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.hamburger{
+    cursor:pointer;
+}
+.sidebar{
+    position: fixed;
+    top:15;
+    right:0;
+    height: 30vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    
+}
+
+.sidebar li a{
+    color: grey !important;
+    
+}
+.sidebar li{
+    width: 100% !important;
+    margin: 1rem !important;
+    
+}
+.sidebar li a:hover{
+    background-color: yellow;
+    color:hsl(212, 27%, 19%) !important;
+    padding: 1rem 2rem;
+}
+.overlay{
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 900;
+    margin-top: 10em;
+    text-align: center;
+    color: white;
+    line-height: 3em;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    margin-top: 20px;
+    width: 50px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.container div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+
+}
+.container .text{
+    margin: 6rem;
+}
+.container .text h2{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+.container .text p{
+    font-family: 'Barnow', sans-serif;
+    opacity: 0.75;
+    color:hsl(213, 9%, 39%);
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+}
+.container .text span{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative; 
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.container .text span::after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    height: 12px;
+    width: 110%;
+    background-color: hsla(51, 100%, 49%, 0.5); 
+    z-index: -1;
+    border-radius: 5px; 
+}
+
+.container .text .red::after{
+    background-color: hsla(7, 99%, 70%,0.5) 
+}
+.image-text-container{
+    position: relative;
+    width: 100%;
+}
+
+.image-text-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+.text-overlay h2{
+    font-family: 'Fraunces',sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+.text-overlay p{
+    font-family: 'Barnow', sans-serif;
+    opacity: 0.75;
+    color:hsl(213, 9%, 39%);
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    place-content: center;
+    gap: 1rem;
+}
+
+.clients{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces',sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    color:hsla(213, 9%, 39%,0.5);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container-2 div {
+    display: grid;
+    place-items: center;
+}
+.container-2 div img{
+    width: 75px;
+    border-radius: 50%;
+}
+.container-2 div p{
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Barnow',sans-serif;
+    color: hsla(213, 9%, 39%,0.8);
+    line-height: 2rem;
+}
+.container-2 div h4{
+    margin-bottom: 0.2rem;
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 800;
+}
+.container-2 div span{
+    font-family: 'Barnow',sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color:hsla(232, 10%, 55%,0.8);
+    margin-bottom: 6rem;
+}
+.container-3 img{
+    width: 100%;
+}
+.container-3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+footer{
+    background-color: hsla(168, 34%, 41%,0.8);
+    height: 35vh;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+footer img{
+    margin-top: 2rem;
+    color: hsl(167, 40%, 24%);
+}
+
+footer nav a{
+    text-decoration: none;
+    margin: 15px;
+    color: hsl(167, 40%, 24%);
+}
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 435px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        
+    }
+    .container div img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container-3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    header {
+        background-image: url('images/mobile/image-header.jpg');
+        background-size: cover;
+        background-position: center;
+        
+        height: 100vh;
+    }
+    .desctop-navbar{
+        display: none !important;
+    }
+    .hamburger{
+        display: block;
+    }
+}
